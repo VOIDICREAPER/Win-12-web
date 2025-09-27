@@ -1,2 +1,28 @@
-# Win-12-web
-Windows 12 web version
+win12-web/
+├─ public/
+│   └─ index.html
+├─ src/
+│   ├─ App.js
+│   ├─ index.js
+│   └─ components/
+│       ├─ Taskbar.js
+│       ├─ DesktopIcon.js
+│       └─ Window.js
+├─ package.json
+{
+{
+  "name": "win12-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
